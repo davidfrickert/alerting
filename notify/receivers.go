@@ -25,6 +25,7 @@ import (
 	"github.com/grafana/alerting/receivers/kafka"
 	"github.com/grafana/alerting/receivers/line"
 	"github.com/grafana/alerting/receivers/mqtt"
+	"github.com/grafana/alerting/receivers/ntfy"
 	"github.com/grafana/alerting/receivers/oncall"
 	"github.com/grafana/alerting/receivers/opsgenie"
 	"github.com/grafana/alerting/receivers/pagerduty"
@@ -187,6 +188,7 @@ type GrafanaReceiverConfig struct {
 	AlertmanagerConfigs []*NotifierConfig[alertmanager.Config]
 	DingdingConfigs     []*NotifierConfig[dinding.Config]
 	DiscordConfigs      []*NotifierConfig[discord.Config]
+	NtfyConfigs         []*NotifierConfig[ntfy.Config]
 	EmailConfigs        []*NotifierConfig[email.Config]
 	GooglechatConfigs   []*NotifierConfig[googlechat.Config]
 	JiraConfigs         []*NotifierConfig[jira.Config]
@@ -300,6 +302,12 @@ func parseNotifier(ctx context.Context, result *GrafanaReceiverConfig, receiver 
 			return err
 		}
 		result.DingdingConfigs = append(result.DingdingConfigs, newNotifierConfig(receiver, cfg))
+	case "ntfy":
+		cfg, err := ntfy.NewConfig(receiver.Settings)
+		if err != nil {
+			return err
+		}
+		result.NtfyConfigs = append(result.NtfyConfigs, newNotifierConfig(receiver, cfg))
 	case "discord":
 		cfg, err := discord.NewConfig(receiver.Settings, decryptFn)
 		if err != nil {

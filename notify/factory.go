@@ -19,6 +19,7 @@ import (
 	"github.com/grafana/alerting/receivers/kafka"
 	"github.com/grafana/alerting/receivers/line"
 	"github.com/grafana/alerting/receivers/mqtt"
+	"github.com/grafana/alerting/receivers/ntfy"
 	"github.com/grafana/alerting/receivers/oncall"
 	"github.com/grafana/alerting/receivers/opsgenie"
 	"github.com/grafana/alerting/receivers/pagerduty"
@@ -75,6 +76,9 @@ func BuildReceiverIntegrations(
 	}
 	for i, cfg := range receiver.DiscordConfigs {
 		ci(i, cfg.Metadata, discord.New(cfg.Settings, cfg.Metadata, tmpl, nw(cfg.Metadata), img, nl(cfg.Metadata), version))
+	}
+	for i, cfg := range receiver.NtfyConfigs {
+		ci(i, cfg.Metadata, ntfy.New(cfg.Settings, cfg.Metadata, tmpl, nw(cfg.Metadata), img, nl(cfg.Metadata), version))
 	}
 	for i, cfg := range receiver.EmailConfigs {
 		mailCli, e := newEmailSender(cfg.Metadata)
