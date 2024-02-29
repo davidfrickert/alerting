@@ -435,7 +435,7 @@ func parseNotifier(ctx context.Context, result *GrafanaReceiverConfig, receiver 
 		}
 		result.WebexConfigs = append(result.WebexConfigs, newNotifierConfig(receiver, cfg))
 	default:
-		return fmt.Errorf("notifier %s is not supported", receiver.Type)
+		return fmt.Errorf("DBG notifier %s is not supported", receiver.Type)
 	}
 	return nil
 }
