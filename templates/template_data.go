@@ -21,7 +21,7 @@ import (
 	"github.com/prometheus/alertmanager/types"
 	"github.com/prometheus/common/model"
 
-	"github.com/grafana/alerting/models"
+	"github.com/davidfrickert/alerting/models"
 )
 
 type Template = template.Template

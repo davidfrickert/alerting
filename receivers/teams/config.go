@@ -6,7 +6,7 @@ import (
 
 	"github.com/pkg/errors"
 
-	"github.com/grafana/alerting/templates"
+	"github.com/davidfrickert/alerting/templates"
 )
 
 type Config struct {

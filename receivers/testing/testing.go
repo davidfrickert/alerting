@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/url"
 
-	"github.com/grafana/alerting/receivers"
+	"github.com/davidfrickert/alerting/receivers"
 )
 
 func ParseURLUnsafe(s string) *url.URL {
