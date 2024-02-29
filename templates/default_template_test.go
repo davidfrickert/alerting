@@ -11,7 +11,7 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/alerting/logging"
+	"github.com/davidfrickert/alerting/logging"
 )
 
 func TestDefaultTemplateString(t *testing.T) {

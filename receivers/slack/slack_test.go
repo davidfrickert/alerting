@@ -21,10 +21,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/grafana/alerting/images"
-	"github.com/grafana/alerting/logging"
-	"github.com/grafana/alerting/receivers"
-	"github.com/grafana/alerting/templates"
+	"github.com/davidfrickert/alerting/images"
+	"github.com/davidfrickert/alerting/logging"
+	"github.com/davidfrickert/alerting/receivers"
+	"github.com/davidfrickert/alerting/templates"
 )
 
 var appVersion = fmt.Sprintf("%d.0.0", rand.Uint32())

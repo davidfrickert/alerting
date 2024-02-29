@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/davidfrickert/alerting/cluster"
 	"github.com/go-kit/log"
 	"github.com/go-kit/log/level"
-	"github.com/grafana/alerting/cluster"
 	amv2 "github.com/prometheus/alertmanager/api/v2/models"
 	"github.com/prometheus/alertmanager/config"
 	"github.com/prometheus/alertmanager/dispatch"
@@ -29,8 +29,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/common/model"
 
-	"github.com/grafana/alerting/models"
-	"github.com/grafana/alerting/templates"
+	"github.com/davidfrickert/alerting/models"
+	"github.com/davidfrickert/alerting/templates"
 )
 
 const (

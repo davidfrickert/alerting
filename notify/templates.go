@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	tmpltext "text/template"
 
-	"github.com/grafana/alerting/templates"
+	"github.com/davidfrickert/alerting/templates"
 	"github.com/prometheus/alertmanager/notify"
 	"github.com/prometheus/alertmanager/template"
 	"github.com/prometheus/common/model"

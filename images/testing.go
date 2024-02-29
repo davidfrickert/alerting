@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/grafana/alerting/models"
+	"github.com/davidfrickert/alerting/models"
 	"github.com/prometheus/alertmanager/types"
 )
 
