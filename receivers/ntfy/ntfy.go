@@ -13,9 +13,10 @@ import (
 )
 
 type ntfyMessage struct {
-	Topic   string `json:"topic"`
-	Title   string `json:"title"`
-	Message string `json:"message"`
+	Topic    string `json:"topic"`
+	Title    string `json:"title"`
+	Message  string `json:"message"`
+	Markdown bool   `json:"markdown"`
 }
 
 type Notifier struct {
@@ -49,9 +50,10 @@ func (n Notifier) Notify(ctx context.Context, as ...*types.Alert) (bool, error) 
 	channel := n.settings.Channel
 
 	msg := &ntfyMessage{
-		Title:   tmpl(title),
-		Message: tmpl(message),
-		Topic:   channel,
+		Title:    tmpl(title),
+		Message:  tmpl(message),
+		Topic:    channel,
+		Markdown: true,
 	}
 
 	body, err := json.Marshal(msg)
