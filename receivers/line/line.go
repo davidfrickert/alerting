@@ -8,9 +8,9 @@ import (
 	"github.com/prometheus/alertmanager/notify"
 	"github.com/prometheus/alertmanager/types"
 
-	"github.com/davidfrickert/alerting/logging"
-	"github.com/davidfrickert/alerting/receivers"
-	"github.com/davidfrickert/alerting/templates"
+	"github.com/grafana/alerting/logging"
+	"github.com/grafana/alerting/receivers"
+	"github.com/grafana/alerting/templates"
 )
 
 var (

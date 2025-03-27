@@ -13,10 +13,10 @@ import (
 	"github.com/prometheus/alertmanager/types"
 	"github.com/prometheus/common/model"
 
-	"github.com/davidfrickert/alerting/images"
-	"github.com/davidfrickert/alerting/logging"
-	"github.com/davidfrickert/alerting/receivers"
-	"github.com/davidfrickert/alerting/templates"
+	"github.com/grafana/alerting/images"
+	"github.com/grafana/alerting/logging"
+	"github.com/grafana/alerting/receivers"
+	"github.com/grafana/alerting/templates"
 )
 
 const (

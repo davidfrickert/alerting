@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/davidfrickert/alerting/templates"
+	"github.com/grafana/alerting/templates"
 )
 
 type Config struct {

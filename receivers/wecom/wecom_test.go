@@ -17,9 +17,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/davidfrickert/alerting/logging"
-	"github.com/davidfrickert/alerting/receivers"
-	"github.com/davidfrickert/alerting/templates"
+	"github.com/grafana/alerting/logging"
+	"github.com/grafana/alerting/receivers"
+	"github.com/grafana/alerting/templates"
 )
 
 func TestNotify_GroupRobot(t *testing.T) {

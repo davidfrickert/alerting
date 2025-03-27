@@ -6,8 +6,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	receiversTesting "github.com/davidfrickert/alerting/receivers/testing"
-	"github.com/davidfrickert/alerting/templates"
+	receiversTesting "github.com/grafana/alerting/receivers/testing"
+	"github.com/grafana/alerting/templates"
 )
 
 func TestNewConfig(t *testing.T) {

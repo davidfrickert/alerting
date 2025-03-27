@@ -14,7 +14,7 @@ import (
 	"github.com/prometheus/alertmanager/types"
 	"github.com/prometheus/common/model"
 
-	"github.com/davidfrickert/alerting/logging"
+	"github.com/grafana/alerting/logging"
 )
 
 func TestDefaultTemplateString(t *testing.T) {

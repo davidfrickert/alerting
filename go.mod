@@ -1,4 +1,4 @@
-module github.com/davidfrickert/alerting
+module github.com/grafana/alerting
 
 go 1.22
 

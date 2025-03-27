@@ -17,10 +17,10 @@ import (
 	"github.com/prometheus/alertmanager/types"
 	"github.com/prometheus/common/model"
 
-	images2 "github.com/davidfrickert/alerting/images"
-	"github.com/davidfrickert/alerting/logging"
-	"github.com/davidfrickert/alerting/receivers"
-	"github.com/davidfrickert/alerting/templates"
+	images2 "github.com/grafana/alerting/images"
+	"github.com/grafana/alerting/logging"
+	"github.com/grafana/alerting/receivers"
+	"github.com/grafana/alerting/templates"
 )
 
 func TestNotify(t *testing.T) {

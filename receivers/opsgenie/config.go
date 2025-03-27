@@ -7,8 +7,8 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/davidfrickert/alerting/receivers"
-	"github.com/davidfrickert/alerting/templates"
+	"github.com/grafana/alerting/receivers"
+	"github.com/grafana/alerting/templates"
 )
 
 const (

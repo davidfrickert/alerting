@@ -13,10 +13,10 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/davidfrickert/alerting/images"
-	"github.com/davidfrickert/alerting/logging"
-	"github.com/davidfrickert/alerting/receivers"
-	receiversTesting "github.com/davidfrickert/alerting/receivers/testing"
+	"github.com/grafana/alerting/images"
+	"github.com/grafana/alerting/logging"
+	"github.com/grafana/alerting/receivers"
+	receiversTesting "github.com/grafana/alerting/receivers/testing"
 )
 
 func TestNotify(t *testing.T) {

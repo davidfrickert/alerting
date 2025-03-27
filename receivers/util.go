@@ -17,7 +17,7 @@ import (
 
 	"github.com/prometheus/common/model"
 
-	"github.com/davidfrickert/alerting/logging"
+	"github.com/grafana/alerting/logging"
 )
 
 type AlertStateType string

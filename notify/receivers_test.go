@@ -12,7 +12,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/davidfrickert/alerting/receivers"
+	"github.com/grafana/alerting/receivers"
 )
 
 func TestReceiverTimeoutError_Error(t *testing.T) {
